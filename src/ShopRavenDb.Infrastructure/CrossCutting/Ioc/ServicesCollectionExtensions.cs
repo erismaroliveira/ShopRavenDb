@@ -37,6 +37,7 @@
         public static IServiceCollection AddDomainServices(this IServiceCollection servicesCollection)
         {
             servicesCollection.TryAddScoped<ICustomerService, CustomerService>();
+            servicesCollection.TryAddScoped<IDocumentService, DocumentService>();
 
             return servicesCollection;
         }
@@ -44,6 +45,7 @@
         public static IServiceCollection AddApplicationServices(this IServiceCollection servicesCollection)
         {
             servicesCollection.TryAddScoped<ICustomerApplication, CustomerApplication>();
+            servicesCollection.TryAddScoped<IDocumentApplication, DocumentApplication>();
 
             return servicesCollection;
         }
@@ -51,6 +53,7 @@
         public static IServiceCollection AddRepositories(this IServiceCollection servicesCollection)
         {
             servicesCollection.TryAddScoped<ICustomerRepository, CustomerRepository>();
+            servicesCollection.TryAddScoped<IDocumentRepository, DocumentRepository>();
 
             return servicesCollection;
         }

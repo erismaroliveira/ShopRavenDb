@@ -11,3 +11,4 @@ global using ShopRavenDb.Infrastructure.Data.Repositories;
 global using ShopRavenDb.Application;
 global using AutoMapper;
 global using ShopRavenDb.Application.Mappers;
+global using Microsoft.AspNetCore.Http;
